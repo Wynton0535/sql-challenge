@@ -24,8 +24,6 @@ CREATE TABLE employees(
 	FOREIGN KEY (emp_title_id) REFERENCES titles(title_id)
 );
 
-
--- The dept_emp table is many-many relationship, so two primary keys are needed
 CREATE TABLE dept_emp(
 	emp_no INT NOT NULL,
 	dept_no VARCHAR NOT NULL,
@@ -42,7 +40,6 @@ CREATE TABLE salaries(
 );
 
 
--- The dept_manager table is many-many relationship, so two primary keys are needed
 CREATE TABLE dept_manager(
 	dept_no VARCHAR NOT NULL,
 	emp_no INT NOT NULL,
